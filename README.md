@@ -25,7 +25,7 @@ while the dataset of the elbow (for example) model need 2 classes:
 
 3.  Run the 7 abnormality detectors as well and save the corresonding .h5 and .json files.
 
-4.  Now everything is ready to run the Main program that will load all the saved models and test the overall performance of the trained models.
+4.  Now everything is ready to run the Main program.ipynb that will load all the saved models and test the overall performance of the trained models.
 
 ## Simple web_app user interface
 The code xrayforweb.py uses flask api to post the prediction results of a user selected image.  The posted result is sent to the predict.html for user visualization.  Just make sure to place all the trained models in h5/ folder and place the predict.html file in /static folder.
