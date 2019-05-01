@@ -5,7 +5,7 @@ Musculoskeletal conditions affect more than 1.7 billion people worldwide, and ar
 MURA is one of the largest public radiographic image datasets. We're making this dataset available to the community and hosting a competition to see if your models can perform as well as radiologists on the task." (https://stanfordmlgroup.github.io/competitions/mura/)
 
 ## Approach:
-The purpose of this program is to detect upper limb abnormalities xrays privided by MURA dataset.  To approach that, first the program classifies the xray image into upper limbs parts (finger, hand, wrist, forearm, elbow, humerus or shoulder).  After that, the corresponding model is selected to predict the abnormality in that part.  The model then calculates the arithmetic mean of all the xrays images in the study and produce the final prediction. (for more information about the structure of the dataset, please go to: https://stanfordmlgroup.github.io/competitions/mura/)
+The purpose of this program is to detect upper limb abnormalities xrays provided by MURA dataset.  To approach that, first the program classifies the xray image into upper limbs parts (finger, hand, wrist, forearm, elbow, humerus or shoulder).  After that, the corresponding model is selected to predict the abnormality in that part.  The model then calculates the arithmetic mean of all the xrays images in the study and produce the final prediction. (for more information about the structure of the dataset, please go to: https://stanfordmlgroup.github.io/competitions/mura/)
 
 ## Architecture
 Transfer learning and fine tuning was made to MobileNet model for all the models which were used.  A modification was applied on the last layers of the MobileNet model.
