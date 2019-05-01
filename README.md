@@ -7,6 +7,9 @@ MURA is one of the largest public radiographic image datasets. We're making this
 ## Approach:
 The purpose of this program is to detect the abnormality  the upper limb parts in the xrays privided in MURA dataset.  To approach that, first it identifies the part in the xray as finger, hand, wrist, forearm, elbow, humerus or shoulder.  After that, the corresponding model is selected to predict the abnormality in that part.  The model then take the arithmetic mean of all the xrays in the study and produce the final prediction. (for more information about the structure of the dataset, please go to: https://stanfordmlgroup.github.io/competitions/mura/)
 
+## Architecture
+Transfer learning and fine tuning is made to MobileNet model for all the models used.  A modification is applied on the last layers of the MobileNet model.
+
 ## How to run the codes?
 
 1. first, the dataset need to be rearranged to have (train, valid and test) sets for each model. For example, the dataset for the upper lim part classification need to have 7 classes:
